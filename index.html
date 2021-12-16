@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projects You Give</title>
+<style>
+body {
+  font-family: raleway, sans-serif;
+}
+
+#home {
+ position: absolute;
+ top:0px;
+ left:0px;
+ right:0px;
+}
+
+#title {
+font-size: 20px;
+font-weight: 400;
+text-transform:  uppercase;
+transition: 0.4s;
+padding-top: 5px;
+}
+
+#navID {
+  overflow: hidden;
+  background-color: #222;
+  position: fixed;
+  top:0px;
+ left:0px;
+ right:0px;
+  z-index: 5;
+  transition: 0.4s;
+  padding: 20px 16px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #f9f9f9;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.4s;
+  z-index: 6;
+}
+
+#menuItems {
+float: right;
+}
+
+.items {
+padding: 10px;
+transition: 0.1s;
+}
+
+.items:hover {
+background-color: #555;
+}
+
+/* Time Line */
+
+
+#timelineT {
+ border: 3px solid #EBEBEB;
+ hieght: 5px;
+ width: 0%;
+ position: absolute;
+ top: 200px;
+ left: 10%;
+}
+
+#timelineM {
+ border: 3px solid #A48445;
+ hieght: 5px;
+ width: 0%;
+ position: absolute;
+ top: 204px;
+ left: 10%;
+}
+
+.timelineC {
+ border: 3px solid #D5D5CE;
+ background-color: #EBEBEB;
+ color: #A48445;
+ text-align: center;
+ border-radius: 50%;
+ height: 35px;
+ width: 35px;
+}
+
+.one {
+ position: absolute;
+ top: 182.5px;
+ left: 20%;
+}
+
+.two {
+ position: absolute;
+ top: 182.5px;
+ left: 48%;
+}
+
+.three {
+ position: absolute;
+ top: 182.5px;
+ left: 80%;
+}
+
+.text {
+ position: relative;
+ top: -10px;
+}
+
+#specs {
+ position: absolute;
+ top: 300px;
+ left: 10%;
+ color: #A48445;
+}
+
+#info {
+ font-weight: 400;
+}
+
+li {
+font-weight: 300;
+}
+
+#footer {
+ border: 3px solid #EBEBEB;
+ background-color: #EBEBEB;
+ color: #A48445;
+ text-align: center;
+ border-radius: 0px;
+ height: 100px;
+  position: absolute;
+ top: 1000px;
+ left: 0px;
+ right: 0px;
+}
+
+#more a {
+text-decoration: underline;
+color: #A48445;
+font-weight: 300;
+width: 30%;
+text-align: center;
+position: absolute;
+ top: 10px;
+ left: 30%;
+}
+</style>
+</head>
+<bod>
+
+<div id="home">
+ <div class="navbar" id="navID">
+   <a href="#" onclick="reload()" id="title">Projects You Give</a>
+   <div id="menuItems">
+   <a href="#" class="items">Give A Project</a>
+   <a href="#" class="items">Claim Your Project</a>
+   <a href="#" class="items">About</a>
+   </div>
+ </div>
+</div>
+  
+  
+<div id="mainContent">
+  
+</div> 
+  
+<script>
+  window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+    document.getElementById("navID").style.padding = "12px 12px";
+    document.getElementById("title").style.fontSize = "16px";
+  } else {
+    document.getElementById("navID").style.padding = "30px 16px";
+    document.getElementById("title").style.fontSize = "20px";
+  }
+} 
+</script>  
+
+</body>
+</html>
